@@ -2176,6 +2176,73 @@ html, body {
 
 
 
+/* =========================
+   HEADER MOBILE FIX
+========================= */
+
+/* Base – mobile first */
+.browser-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+/* Top row: traffic + search */
+.header-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Traffic lights smaller */
+.traffic-light {
+  width: 8px;
+  height: 8px;
+}
+
+/* Hide tabs completely on mobile */
+.nav-tabs {
+  display: none;
+}
+
+/* Search icon smaller */
+.search-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+/* =========================
+   TABLET & UP
+========================= */
+@media (min-width: 768px) {
+  .browser-header {
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 1.25rem;
+  }
+
+  .nav-tabs {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.star-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+
+
+
+
+
 
 
 
