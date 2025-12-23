@@ -1988,6 +1988,191 @@ body {
 }
 
 
+/* ===========================
+   GLOBAL FIXES
+=========================== */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===========================
+   HERO SECTION FIX
+=========================== */
+.digital-agency-hero {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .digital-agency-hero {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+
+/* ===========================
+   OUTER GLOW FIX
+=========================== */
+.outer-glow {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* ===========================
+   NAV / HEADER FIX
+=========================== */
+@media (max-width: 768px) {
+  .browser-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-tabs {
+    display: none;
+  }
+}
+
+/* ===========================
+   CODE / CONTENT AREA
+=========================== */
+.code-content {
+  overflow-x: auto;
+  word-break: break-word;
+}
+
+/* ===========================
+   CTA FIX
+=========================== */
+@media (max-width: 640px) {
+  .cta-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .cta-heading {
+    font-size: 2rem;
+  }
+}
+
+/* ===========================
+   PROJECTS FIX
+=========================== */
+.projects-grid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-image {
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+/* ===========================
+   TESTIMONIAL FIX
+=========================== */
+.testimonials-grid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.testimonial-card {
+  width: 100%;
+  max-width: 360px;
+  margin: auto;
+}
+
+/* ===========================
+   FOOTER FIX
+=========================== */
+.footer-grid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  }
+}
+
+/* ===========================
+   ABOUT / PRODUCTS FIX
+=========================== */
+.aboutus-wrapper {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  .aboutus-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.products-grid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===========================
+   INTERNSHIP FIX
+=========================== */
+.development-types {
+  justify-content: center;
+}
+
+.dev-icon {
+  width: 100px;
+  height: 100px;
+  font-size: 3rem;
+}
+
+/* ===========================
+   SCROLLER FIX
+=========================== */
+.scroller {
+  gap: 20px;
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .banner-title {
+    font-size: 1.2rem;
+  }
+
+  .projects-heading {
+    font-size: 1.8rem;
+  }
+}
 
 
 
