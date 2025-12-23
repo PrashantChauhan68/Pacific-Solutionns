@@ -184,7 +184,7 @@ export default function Footer() {
 
         {/* FOOTER BOTTOM */}
         <div className="footer-bottom">
-          <p>© 2025 Shiwansh Solutions. All rights reserved.</p>
+          <p>© 2025 Pacific Solutions. All rights reserved.</p>
           <p className="developer-credit">@Developed By: Prashant Chauhan</p>
         </div>
 
