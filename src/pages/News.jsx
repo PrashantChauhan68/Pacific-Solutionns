@@ -6,9 +6,9 @@ function News() {
   const [error, setError] = useState("");
   const [page, setPage] = useState(1);
 
-  const API_KEY = "6332631a070d62ba59c87bca03c50a3c"; 
+  const API_KEY = "633f1520537a4548890bc6e49b54e8f9"; 
   const pageSize = 200;
-  const url = `https://gnews.io/api/v4/top-headlines?lang=en&max=${pageSize}&page=${page}&token=${API_KEY}`;
+  const url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=633f1520537a4548890bc6e49b54e8f9`;
 
   const truncateText = (text, wordLimit) => {
     if (!text) return "";
@@ -22,6 +22,7 @@ function News() {
       setLoading(true);
       const res = await fetch(url);
       const data = await res.json();
+      console.log(data)
 
       if (data.articles && data.articles.length > 0) {
         setArticles((prev) => [...prev, ...data.articles]);
@@ -80,9 +81,9 @@ function News() {
             }}
           >
             {/* IMAGE */}
-            {article.image ? (
+            {article.urlToImage ? (
               <img
-                src={article.image}
+                src={article.urlToImage}
                 alt={article.title}
                 onError={(e) => (e.target.style.display = "none")}
                 style={{
