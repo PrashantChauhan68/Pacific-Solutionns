@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import InternshipBanner from '../components/internshipBanner';
+import InternshipBanner from '../components/InternshipBanner';
 import { MapPin, ChevronLeft, ChevronRight } from "lucide-react";
 import Studentfeedback from '../components/Studentfeedback';
 import "../index.css";
