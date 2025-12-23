@@ -33,7 +33,7 @@ import React from 'react';
           {/* About Us Section */}
           <div className="about-section">
             <span className="about-label" style={{ background:" rgb(248 249 250)",
-        background: " rgb(248 249 250)",
+        // background: " rgb(248 249 250)",
         color: "#3b82f6",
         padding: "6px 18px",
         borderRadius:"10px",
@@ -45,12 +45,7 @@ import React from 'react';
             <h2 className="about-title" style={{
               fontSize:"55px",
               fontWeight:"bolder",
-            }}>
-              Shiwansh Solutions for Your Business  
-                        </h2>
-
-
-            
+            }}>  Shiwansh Solutions for Your Business</h2>
             <div className="about-content">
               <p className="about-paragraph">
                 Welcome to Shiwansh Solutions, a leading SaaS company dedicated to driving digital 
