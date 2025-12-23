@@ -1,0 +1,39 @@
+.menu-link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 3px;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline */
+.menu-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: #53b018;
+}
+
+/* Hover text color */
+.menu-link:hover {
+  color: #53b018;
+}
+
+/* When active route is open */
+.menu-link.active {
+  color: #53b018;
+}
+
+/* Active route underline */
+.menu-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #53b018;
+}
