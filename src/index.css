@@ -1619,18 +1619,15 @@ body {
  
 }
 
-
-* Internship Banner Styles */
-
 .internship-banner {
   text-align: center;
   padding: 60px 20px;
   
 }
 .banner-wrapper {
-  max-width: 900px;       /* ⬅ Increase content width */
+  max-width: 900px;      
   width: 100%;
-  margin: 0 auto;         /* center it */
+  margin: 0 auto;         
 }
 
 .banner-title {
@@ -1638,7 +1635,7 @@ body {
   font-weight: 700;
   color: #070a10;
   margin-bottom: 25px;
-  line-height: 1.5;       /* slightly increased */
+  line-height: 1.5;       
 }
 
 .banner-subtitle {

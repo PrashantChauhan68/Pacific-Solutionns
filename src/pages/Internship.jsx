@@ -1,5 +1,5 @@
-import React, { useRef, useEffect, useState } from 'react'
-import InternshipBanner from '../components/internshipBanner'
+import React, { useRef, useEffect, useState } from 'react';
+import InternshipBanner from '../components/internshipBanner';
 import { MapPin, ChevronLeft, ChevronRight } from "lucide-react";
 import Studentfeedback from '../components/Studentfeedback';
 import "../index.css";
@@ -53,7 +53,7 @@ function Internship() {
       role: ".Net Fullstack Developer",
       location: "Mohali",
       image: "https://www.shiwansh.com/images/ravi.jpg",
-      message: "Went from learning the basics to becoming a .NET developer at Infosys pvt ltd."
+      message: "Went from learning the basics to becoming a .NET developer at Shiwansh Solutions."
     },
   ];
 
