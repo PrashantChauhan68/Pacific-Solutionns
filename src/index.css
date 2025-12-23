@@ -2247,3 +2247,133 @@ html, body {
 
 
 
+/* =========================
+   GLOBAL MOBILE SAFETY
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   HEADER – MOBILE FIRST
+========================= */
+.browser-header {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-tabs {
+  display: none; /* hide on mobile */
+}
+
+@media (min-width: 768px) {
+  .browser-header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-tabs {
+    display: flex;
+  }
+}
+
+/* =========================
+   HERO / MAIN WRAPPER
+========================= */
+.digital-agency-hero {
+  padding: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .digital-agency-hero {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+
+.outer-glow,
+.browser-window {
+  max-width: 100%;
+}
+
+/* =========================
+   TESTIMONIAL SECTION
+========================= */
+.client-feedback-section {
+  padding: 1rem;
+  width: 100%;
+}
+
+/* Mobile first: single column */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Card fix */
+.testimonial-card {
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+/* Text readable */
+.client-name {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.feedback-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: left;
+  word-break: break-word;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =========================
+   SMALL SCREEN TYPOGRAPHY
+========================= */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
